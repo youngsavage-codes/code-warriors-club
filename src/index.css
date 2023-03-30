@@ -1,0 +1,784 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #282c34;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar
+{
+  width: 0;
+}
+
+/* NAVBAR */
+
+.nav
+{
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 555;
+  justify-content: space-between;
+}
+
+.nav .header
+{
+  display: flex;
+  align-items: center;
+}
+
+.nav .header .logo h2
+{
+  margin-left: 190px;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.nav .header ul
+{
+  list-style: none;
+  margin-left: 20px;
+}
+
+.nav .header ul li
+{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav .header ul li a
+{
+  text-decoration: none;
+  font-size: 10px;
+  color: #282c34;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav .links a
+{
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  margin-right: 230px;
+  color: #282c34; 
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (max-width: 800px) 
+{
+  .nav .header .logo h2
+  {
+    margin-left: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+  }
+  
+  .nav .links a
+  {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 20px;
+    color: #282c34; 
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}
+
+
+ /* LANDING PAGE */
+
+ .landing
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  padding: 0 100px;
+  z-index: 5;
+  height: 80vh;
+}
+
+
+.landing-text
+{
+  margin-left: 50px;
+  width: 35%;
+}
+
+.landing-img
+{
+  width: 50%;
+  height: 80%;
+}
+
+.landing-img img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.landing-text h3
+{
+  font-weight: 300;
+  font-size: 58px;
+  font-family: 'Cabin Sketch';
+  text-transform: uppercase;
+}
+
+.words h5
+{
+  font-size: 10px;
+  margin: 10px 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.words p
+{
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.words span
+{
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.phone{
+  display: none;
+}
+
+.pc
+{
+  display: block;
+}
+
+@media screen and (max-width: 800px) 
+{
+  .landing
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding: 0 100px;
+    z-index: 5;
+    height: 100vh;
+  }
+
+  .landing-text
+  {
+    width: 30%;
+    padding-top: 0px;
+  }
+
+  .landing-img
+  {
+    width: 40%;
+    height: 30%;
+    position: relative;
+    top: 50px;
+  }
+
+  .phone
+  {
+    display: block;
+  }
+
+  .pc
+  {
+    display: none;
+  }
+
+  .landing
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 5;
+  }
+
+  .landing-text h3
+  {
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+    .landing-text
+  {
+    width: 90%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .landing-img
+  {
+    width: 100%;
+    height: auto;
+  }
+  
+
+}
+
+/* HOW TO LEARN */
+.learn
+{
+  margin-top: 0px;
+}
+
+.intro
+{
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 30px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.main-learn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-learn
+{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.child
+{
+  width: 30%;
+}
+
+.img-field
+{
+  background: rgb(245, 245, 245);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.img-field img
+{
+  width: 70%;
+  height: 85%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.child h4
+{
+  font-family: 'Cabin Sketch', cursive;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+.child p
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  color: gray;
+}
+
+
+@media screen and (max-width: 800px) 
+{
+  .intro
+  {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Cabin Sketch', cursive;
+  }
+
+  .mini-learn
+  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .child
+  {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mini-learn
+  {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/* ABOUT US */
+.About
+{
+  margin-top: 50px;
+}
+
+.About-Container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.about-img
+{
+  width: 40%;
+}
+
+.about-img img
+{
+  width: 100%;
+}
+
+.about-txt
+{
+  width: 50%;
+}
+
+.about-txt h2
+{
+  font-family: 'Cabin Sketch';
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.about-txt p
+{
+  color: gray;
+  font-size: 13px;
+  width: 90%;
+  margin: 25px 0 8px 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-txt .date
+{
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-txt a
+{
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 10px;
+  font-size: 13px;
+}
+
+.clubs-details
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 25px;
+}
+
+.clubs-details .num
+{
+  text-align: center;
+}
+
+.clubs-details .num h6
+{
+  font-size: 15px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 800;
+}
+
+.clubs-details .num span
+{
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (max-width: 800px)
+{
+  .About
+  {
+    margin-top: 0px;
+  }
+
+  .parent
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .about-img
+  {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .about-txt
+  {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .about-txt h2
+  {
+    font-family: 'Cabin Sketch';
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .about-txt p
+  {
+    color: gray;
+    font-size: 11px;
+    margin: 15px 0 10px 0;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .about-txt a
+  {
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 1px solid #333;
+    color: #333;
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+
+  .clubs-details
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 25px;
+  }
+}
+
+/* SUBSCRIBE */
+.subscribe
+{
+  margin-top: 50px;
+}
+
+.subscribe p
+{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  color: gray;
+}
+
+.subscribe-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+  padding: 50px 0;
+}
+
+.sub-child
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.subscribe-container input
+{
+  padding: 10px 15px;
+  width: 60%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-transform: uppercase;
+}
+
+.subscribe-container button
+{
+  padding: 10px;
+  height: 50px;
+  width: 20%;
+  background: #333;
+  color: white;
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px)
+{
+  .subscribe p
+  {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    padding: 0 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+  }
+  
+    .sub-child
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .subscribe-container input
+  {
+    padding: 10px 10px;
+    width: 60%;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    font-size: 9px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .subscribe-container button
+  {
+    padding: 10px;
+    height: 50px;
+    width: 20%;
+    background: #333;
+    color: white;
+    font-size: 7px;
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* REVIEW */
+.reviews
+{
+  margin-top: 30px;
+}
+
+.review-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-parent
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.review-child
+{
+  padding-bottom: 20px;
+  width: 30%;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.review-img
+{
+  width: 100%;
+  height: 30vh;
+  background: white;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.review-img img
+{
+  width: 80%;
+  height: 100%;
+}
+
+.review-child h4
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.review-child p
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px)
+{
+  .review-parent
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .review-child
+  {
+    padding-bottom: 20px;
+    width: 80%;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}
+
+/* FOOTER */
+.footer
+{
+  color: white;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #282c34;
+}
+
+.footer-child
+{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .logo h2
+{
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.footer .footer-flex
+{
+  display: flex;
+  align-items: flex-start;
+  width: 70%;
+  justify-content: space-between;
+  border-bottom: 2px solid whitesmoke;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.ul-grid
+{
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-around;
+  width: 50%;
+} 
+
+.footer .footer-flex h5
+{
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.footer ul
+{
+  list-style: none;
+}
+
+.footer ul li a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+}
+
+.copyrights p
+{
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+}
+
+@media screen and (max-width: 800px)
+{
+  .ul-grid
+  {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-around;
+    width: 100%;
+  } 
+  
+  .footer .logo
+  {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  
+  .footer .logo h2
+  {
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+  }
+}
