@@ -1,6 +1,6 @@
 import React from 'react'
-import img from './img/land.jpg'
-import indeed from './img/indead.jpg'
+import img from './img/4758689.jpg'
+import indeed from './img/4758689.jpg'
 
 const LandingPage = () => {
   return (

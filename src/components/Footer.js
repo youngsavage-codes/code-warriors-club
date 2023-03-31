@@ -6,7 +6,7 @@ const Footer = () => {
       <div className='footer-child'>
          <div className='footer-flex'>
             <div className='logo'>
-               <h2 style={{color: 'white'}}>mimo</h2>
+               <h2 style={{color: 'white'}}>code~warriors</h2>
             </div>
             <div className='ul-grid'>
                <ul>
