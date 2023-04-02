@@ -1,5 +1,6 @@
 import React from 'react'
 import img from './img/4401280.jpg'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
                       <span>0</span>
                     </div>
                 </div>
-                  <a href='/'>Learn More</a>
+                  <Link to='/about'>Learn More</Link>
              </div>
         </div>
       </div>

@@ -1,37 +1,40 @@
 import React from 'react'
-import languages from './img/16xc_gyq5_210901.jpg'
 import img from './img/img.jpg'
-import first from './img/pquy_9o2w_220905.jpg'
 
 const Review = () => {
   return (
     <div className='reviews'>
        <h3 className='intro'>Our Reviews</h3>
         <div className='review-container'>
-           <div className='review-parent'>
-             <div className='review-child'>
-               <div className='review-img'>
-                  <img src={first} alt=''/>
-               </div>
-               <h4>Samuel Collins</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestias! Obcaecati sit iure debitis accusantium.</p>
-             </div>
-
-             <div className='review-child'>
-               <div className='review-img'>
-                   <img src={img} alt=''/>
-               </div>
-               <h4>Code Warrior</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestias! Obcaecati sit iure debitis accusantium.</p>
-             </div>
-
-             <div className='review-child'> 
-               <div className='review-img'>
-                  <img src={languages} alt=''/>
-               </div>
-               <h4>Young Savage</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestias! Obcaecati sit iure debitis accusantium.</p>
-             </div>
+          <div className='sponsors'>
+            <div style={{}} className='sponsors-header'>
+              <div className='header-cover'>
+                <h2>Featured Stories</h2>
+              </div>
+            </div>
+            <div className='sponsors-logo'>
+              <div className='main'>
+              <img src={img} alt='' />
+               <img src={img} alt='' />
+               <img src={img} alt='' />
+               <img src={img} alt='' />
+              </div>
+            </div>
+          </div>
+          <div className='review-text'>
+              <div>
+                <p>
+                  I attended the training in may and i must say it is one of the best decisions i have made
+                    i went hungery to learn and i am glad it paid off as i now knw how to build games and webpages
+                </p>
+              </div>
+              <div className='reviewer-details'>
+                <img src={img} alt='reviewerimage' />
+                <div >
+                  <h5>Courage Olaniyi</h5>
+                  <span>5 Years Old</span>
+                </div>
+              </div>
           </div>
        </div>
     </div>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { BsGithub, BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -18,17 +20,18 @@ const Footer = () => {
 
                <ul>
                   <h5>Company</h5>
-                  <li><a href='/'>About us</a></li>
-                  <li><a href='/'>Contact</a></li>
-                  <li><a href='/'>Gallery</a></li>
+                  <li><Link to='/about'>About</Link></li>
+                  <li><Link to='/contact'>Contact</Link></li>
+                  <li><Link to='/services'>Services</Link></li>
+                  <li><Link to='/team'>Team</Link></li>
                </ul>
 
-               <ul>
+               <ul className='social'>
                   <h5>Follow us</h5>
-                  <li><a href='/'><span></span> Facebook</a></li>
-                  <li><a href='/'><span></span> Twitter</a></li>
-                  <li><a href='/'><span></span> Instagram</a></li>
-                  <li><a href='/'><span></span> Github</a></li>
+                  <li><a href='/'><span><BsFacebook /></span> Facebook</a></li>
+                  <li><a href='/'><span><BsTwitter /></span> Twitter</a></li>
+                  <li><a href='/'><span><BsInstagram /></span> Instagram</a></li>
+                  <li><a href='/'><span><BsGithub /></span> Github</a></li>
                </ul>
             </div>
          </div>
